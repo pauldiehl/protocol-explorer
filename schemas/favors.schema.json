@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Web4 Favor Economy Protocol",
+  "description": "Favors are trust deposits, not debts — agent-remembered goodwill between entities",
+  "type": "object",
+  "required": ["protocol", "version"],
+  "properties": {
+    "protocol": { "const": "web4-favors" },
+    "version": { "type": "string" },
+    "philosophy": { "type": "string" },
+    "tracking": { "type": "string", "enum": ["agent_memory", "shared_ledger", "private"] },
+    "enforcement": { "type": "string", "enum": ["none", "gentle_reminder", "governance_linked"] },
+    "visibility": { "type": "string", "enum": ["private_between_parties", "network_visible", "public"] },
+    "note": { "type": "string" }
+  }
+}
