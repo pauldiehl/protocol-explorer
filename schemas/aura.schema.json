@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Web4 Aura Hash Protocol",
+  "description": "Multi-dimensional hash of an entity's complete protocol state — read the network like a face",
+  "type": "object",
+  "required": ["protocol", "version", "entity", "hash"],
+  "properties": {
+    "protocol": { "const": "web4-aura" },
+    "version": { "type": "string" },
+    "entity": { "type": "string" },
+    "generated": { "type": "string", "format": "date-time" },
+    "hash": { "type": "string" },
+    "dimensions": {
+      "type": "object",
+      "properties": {
+        "trust_density": { "type": "number", "minimum": 0, "maximum": 1 },
+        "generosity_index": { "type": "number", "minimum": 0, "maximum": 1 },
+        "alignment_spectrum": { "type": "array", "items": { "type": "string" } },
+        "activity_momentum": { "type": "string", "enum": ["dormant", "stable", "accelerating", "decelerating", "volatile"] },
+        "network_reach": { "type": "string", "enum": ["isolated", "emerging", "connected", "expanding", "hub"] },
+        "dream_state": { "type": "string", "enum": ["none", "dreaming", "active", "achieved"] },
+        "governance_integrity": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "snapshot": { "type": "boolean" }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Web4 Dream Beacon Protocol",
+  "description": "Broadcast your dream to the trust network — a signal fire for builders and believers",
+  "type": "object",
+  "required": ["protocol", "version", "dream"],
+  "properties": {
+    "protocol": { "const": "web4-dream" },
+    "version": { "type": "string" },
+    "dreamer": { "type": "string" },
+    "dream": {
+      "type": "object",
+      "required": ["title", "status"],
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "status": { "type": "string", "enum": ["dreaming", "in_progress", "achieved", "evolved"] },
+        "capacity": { "type": "string" },
+        "open_to": { "type": "array", "items": { "type": "string", "enum": ["builders", "partners", "believers", "funders", "anyone"] } },
+        "what_i_bring": { "type": "string" },
+        "what_i_need": { "type": "string" }
+      }
+    },
+    "values": { "type": "array", "items": { "type": "string" } },
+    "privacy": { "type": "string", "enum": ["public", "network_only", "private"] },
+    "intake": { "type": "string", "format": "uri" }
+  }
+}

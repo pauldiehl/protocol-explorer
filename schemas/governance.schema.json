@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Web4 Governance Protocol",
+  "description": "Your commitments to the world — what agents and humans can expect from you",
+  "type": "object",
+  "required": ["protocol", "version", "commitments"],
+  "properties": {
+    "protocol": { "const": "web4-governance" },
+    "version": { "type": "string" },
+    "commitments": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "dispute_resolution": { "type": "string", "enum": ["direct_conversation", "coalition_mediation", "smart_contract", "arbitration"] },
+    "data_policy": { "type": "string", "enum": ["sovereign_consumer", "shared_with_consent", "open_data"] },
+    "pricing_model": { "type": "string", "enum": ["transparent_posted", "negotiated", "free", "favor_based"] },
+    "data_rights": {
+      "type": "object",
+      "properties": {
+        "export": { "type": "string" },
+        "deletion": { "type": "string" },
+        "portability": { "type": "string" },
+        "agent_access": { "type": "string" }
+      }
+    }
+  }
+}

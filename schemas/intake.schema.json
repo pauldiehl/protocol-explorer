@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Web4 Intake Protocol",
+  "description": "Live endpoint where agents can talk to you — the inbox that makes protocols interactive",
+  "type": "object",
+  "required": ["protocol", "version", "endpoint", "accepts"],
+  "properties": {
+    "protocol": { "const": "web4-intake" },
+    "version": { "type": "string" },
+    "endpoint": { "type": "string", "format": "uri" },
+    "accepts": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["messages", "resources", "proposals", "dream_updates", "favors", "handshakes", "protocol_suggestions"] }
+    },
+    "authentication": { "type": "string", "enum": ["npub_signature", "bearer_token", "none", "coalition_vouched"] },
+    "rate_limit": { "type": "string" },
+    "response_time": { "type": "string" }
+  }
+}

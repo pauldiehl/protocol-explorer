@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Protocol Explorer — Web 4.0</title>
+  <meta name="description" content="Press the button. Become a node in the Web 4.0 trust economy. Open protocols for identity, governance, trust, and agent communication.">
+  <meta property="og:title" content="The Protocol Explorer — Enter Web 4.0">
+  <meta property="og:description" content="Open protocols for the post-platform trust economy. Press the button and join.">
+  <style>
+    :root { --bg:#0c0c10; --surface:#14141a; --surface2:#1a1a24; --border:#252530; --text:#e4e4ec; --dim:#7a7a90; --trust:#6ec8a0; --accent:#e8735a; --accent2:#f4a261; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.7; -webkit-font-smoothing:antialiased; }
+    .container { max-width:760px; margin:0 auto; padding:0 1.5rem; }
+    .hero { text-align:center; padding:6rem 1.5rem 3rem; }
+    .hero h1 { font-size:3rem; font-weight:700; letter-spacing:-0.03em; margin-bottom:0.75rem; }
+    .hero h1 span { color:var(--trust); }
+    .hero .sub { color:var(--dim); font-size:1.15rem; max-width:520px; margin:0 auto 2.5rem; }
+    .btn-primary { display:inline-block; padding:1.1rem 3rem; font-size:1.2rem; font-weight:600; color:var(--bg); background:var(--trust); border:none; border-radius:60px; text-decoration:none; transition:all 0.3s; }
+    .btn-primary:hover { transform:translateY(-2px); box-shadow:0 8px 30px rgba(110,200,160,0.35); }
+    .btn-secondary { display:inline-block; padding:0.7rem 1.5rem; font-size:0.9rem; color:var(--dim); border:1px solid var(--border); border-radius:30px; text-decoration:none; margin-left:1rem; transition:all 0.2s; }
+    .btn-secondary:hover { border-color:var(--trust); color:var(--trust); }
+    section { padding:3rem 0; }
+    h2 { font-size:1.5rem; font-weight:700; margin-bottom:1rem; letter-spacing:-0.02em; }
+    .protocol-grid { display:grid; grid-template-columns:1fr 1fr; gap:0.75rem; margin:1.5rem 0; }
+    .proto-card { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:1rem 1.2rem; transition:border-color 0.2s; }
+    .proto-card:hover { border-color:rgba(110,200,160,0.3); }
+    .proto-card h4 { font-size:0.9rem; font-weight:600; margin-bottom:0.2rem; }
+    .proto-card p { font-size:0.78rem; color:var(--dim); line-height:1.5; }
+    .proto-card code { font-size:0.75rem; color:var(--trust); background:rgba(110,200,160,0.08); padding:0.15rem 0.4rem; border-radius:4px; }
+    .tiers { display:grid; grid-template-columns:1fr 1fr 1fr; gap:1rem; margin:1.5rem 0; }
+    .tier { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:1.2rem; text-align:center; }
+    .tier h4 { font-size:0.95rem; font-weight:600; margin-bottom:0.3rem; }
+    .tier .price { color:var(--trust); font-size:1.1rem; font-weight:700; margin-bottom:0.3rem; }
+    .tier p { font-size:0.8rem; color:var(--dim); line-height:1.4; }
+    footer { text-align:center; padding:3rem 1.5rem; color:var(--dim); font-size:0.8rem; }
+    footer a { color:var(--trust); text-decoration:none; }
+    footer a:hover { text-decoration:underline; }
+    @media(max-width:640px) { .hero h1{font-size:2.2rem;} .protocol-grid,.tiers{grid-template-columns:1fr;} .btn-secondary{margin:0.5rem 0 0;display:block;text-align:center;} }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <h1>The Protocol <span>Explorer</span></h1>
+    <p class="sub">Open protocols for the post-platform trust economy. Identity. Governance. Trust. Agent communication. All in JSON. All at <code>/.well-known/</code>.</p>
+    <div>
+      <a href="button.html" class="btn-primary">Press the Button</a>
+      <a href="https://github.com/protocol-explorer/protocol-explorer" class="btn-secondary">View on GitHub</a>
+    </div>
+  </section>
+
+  <div class="container">
+
+    <section>
+      <h2>Protocol Library</h2>
+      <p style="color:var(--dim);font-size:0.9rem;margin-bottom:1rem;">Each protocol is a <code>/.well-known/</code> JSON endpoint. Agents read them. Humans deploy them. The network grows.</p>
+      <div class="protocol-grid">
+        <div class="proto-card"><h4>Identity</h4><p>Who you are</p><code>identity.json</code></div>
+        <div class="proto-card"><h4>Governance</h4><p>Your commitments</p><code>governance.json</code></div>
+        <div class="proto-card"><h4>Haves</h4><p>What you offer</p><code>haves.json</code></div>
+        <div class="proto-card"><h4>Needs</h4><p>What you need</p><code>needs.json</code></div>
+        <div class="proto-card"><h4>Beliefs</h4><p>Your principles</p><code>beliefs.json</code></div>
+        <div class="proto-card"><h4>Network</h4><p>Your trust chain</p><code>network.json</code></div>
+        <div class="proto-card"><h4>Payments</h4><p>How value moves</p><code>payments.json</code></div>
+        <div class="proto-card"><h4>Dream Beacon</h4><p>Your signal fire</p><code>dream.json</code></div>
+        <div class="proto-card"><h4>Eureka Beacon</h4><p>Moments of discovery</p><code>eureka.json</code></div>
+        <div class="proto-card"><h4>Aura Hash</h4><p>Your protocol fingerprint</p><code>aura.json</code></div>
+        <div class="proto-card"><h4>Intake</h4><p>Where agents talk to you</p><code>intake.json</code></div>
+        <div class="proto-card"><h4>Protocol Registry</h4><p>Protocols about protocols</p><code>protocol-registry.json</code></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Host Your Protocols</h2>
+      <div class="tiers">
+        <div class="tier" style="border-top:3px solid var(--trust);"><div class="price">Free</div><h4>Coalition Hosting</h4><p>Live in 60 seconds. We host. You own your data.</p></div>
+        <div class="tier" style="border-top:3px solid var(--accent2);"><div class="price">Free</div><h4>GitHub Pages</h4><p>5 minutes. You own the repo. Full control.</p></div>
+        <div class="tier" style="border-top:3px solid var(--accent);"><div class="price">$12/yr</div><h4>Own Domain</h4><p>Full sovereignty. yourdomain.com/.well-known/</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>See It Live</h2>
+      <p style="color:var(--dim);font-size:0.9rem;margin-bottom:1rem;">ManVsHealth is a real business running these protocols in production. Not a demo.</p>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+        <a href="reference/manvshealth/governance.json" style="color:var(--trust);font-size:0.9rem;text-decoration:none;">governance.json &rarr;</a>
+        <a href="reference/manvshealth/haves.json" style="color:var(--trust);font-size:0.9rem;text-decoration:none;">haves.json &rarr;</a>
+        <a href="reference/manvshealth/payments.json" style="color:var(--trust);font-size:0.9rem;text-decoration:none;">payments.json &rarr;</a>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>Built by <a href="https://pauldiehl.github.io">Paul Diehl</a> &middot; <a href="https://github.com/sovereign-streams/web4">Full Architecture</a> &middot; <a href="https://manvshealth.com">ManVsHealth</a></p>
+    <p style="margin-top:0.5rem;">The protocols are a public good. Use them, fork them, build on them.</p>
+  </footer>
+
+</body>
+</html>

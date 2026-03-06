@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Web4 Identity Protocol",
+  "description": "Who you are — your digital business card for agents and the trust network",
+  "type": "object",
+  "required": ["protocol", "version", "display_name", "type"],
+  "properties": {
+    "protocol": { "const": "web4-identity" },
+    "version": { "type": "string" },
+    "domain": { "type": "string", "format": "hostname" },
+    "npub": { "type": "string" },
+    "display_name": { "type": "string" },
+    "type": { "type": "string", "enum": ["individual", "business", "agent", "coalition"] },
+    "bio": { "type": "string", "maxLength": 500 },
+    "created": { "type": "string", "format": "date-time" },
+    "links": { "type": "object", "additionalProperties": { "type": "string", "format": "uri" } },
+    "identity_model": {
+      "type": "object",
+      "properties": {
+        "primary": { "type": "string", "enum": ["domain", "npub"] },
+        "signing": { "type": "string", "enum": ["npub", "none"] },
+        "key_managed_by": { "type": "string", "enum": ["agent", "human", "hardware"] }
+      }
+    }
+  }
+}
