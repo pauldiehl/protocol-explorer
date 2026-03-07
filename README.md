@@ -107,6 +107,8 @@ All protocol schemas live in [`/schemas`](./schemas). Use them to validate your 
 
 **SPR (Spiraling Prompt Recursion)** — Iterative context compression. Each step builds on the last, spiraling tighter until the answer is obvious. The Button's interaction model and the pattern agents use in every interaction.
 
+**The Waystation** — Your sovereign embassy on the open internet. The three-layer infrastructure pattern for Web 4.0 nodes: static Beacons for discovery, an intelligent serverless proxy (the Waystation) for interaction, and a sovereign Local Agent for decision-making. The Waystation handles ~80% of agent interactions autonomously — queuing messages, auto-responding, verifying signatures, learning — while your local machine handles the 20% that requires personal attention. See [WAYSTATION-ARCHITECTURE.md](https://github.com/sovereign-streams/web4/blob/main/WAYSTATION-ARCHITECTURE.md).
+
 ---
 
 ## Architecture
@@ -118,6 +120,7 @@ The full Web 4.0 architecture lives at [sovereign-streams/web4](https://github.c
 - [The 48 Laws of Trust](https://github.com/sovereign-streams/web4/blob/main/LAWS-OF-TRUST.md) — The economic case for trust
 - [The Coalition](https://github.com/sovereign-streams/web4/blob/main/COALITION.md) — Who gets the toolkit
 - [Convergent Syndication](https://github.com/sovereign-streams/web4/blob/main/CONVERGENT-SYNDICATION.md) — The universal scaling engine
+- [Waystation Architecture](https://github.com/sovereign-streams/web4/blob/main/WAYSTATION-ARCHITECTURE.md) — Three-layer node infrastructure
 - [Agent Exchange](https://github.com/sovereign-streams/web4/blob/main/AGENT-EXCHANGE.md) — Discovery and incentive layer
 
 ---
