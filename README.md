@@ -12,7 +12,7 @@ Not by explaining Web 4.0. By *installing* it.
 
 **A Protocol Library** — Curated `.well-known` endpoint schemas that any entity can adopt. Identity, governance, haves, needs, beliefs, payments, dream beacons, aura hashing, and more. Starting set: ~20 protocols. Growing organically through convergent syndication — the same trust-driven growth engine that powers the Coalition.
 
-**A Protocol Explorer Interface** — An interactive onboarding experience ([The Button](https://protocol-explorer.github.io/protocol-explorer/button.html)) where you answer a few questions and receive a personalized protocol starter kit. Five personas: Curious, Creator, Business, Builder, Dreamer.
+**A Protocol Explorer Interface** — An interactive onboarding experience ([The Button](https://pauldiehl.github.io/protocol-explorer/)) where you answer a few questions and receive a personalized protocol starter kit. Five personas: Curious, Creator, Business, Builder, Dreamer.
 
 **A Reference Implementation** — ManVsHealth (manvshealth.com) runs these protocols in production on a real health business with real customers. Not a demo. Proof.
 
@@ -21,7 +21,7 @@ Not by explaining Web 4.0. By *installing* it.
 ## Quick Start
 
 ### I want to understand Web 4.0
-[Press the Button](https://protocol-explorer.github.io/protocol-explorer/button.html) — start as "I'm Curious"
+[Press the Button](https://pauldiehl.github.io/protocol-explorer/) — start as "I'm Curious"
 
 ### I want to deploy protocols on my domain
 1. Press the Button as "Business" or "Creator"
